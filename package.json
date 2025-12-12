@@ -1,0 +1,70 @@
+{
+  "name": "quant-trading-system",
+  "version": "1.0.0",
+  "description": "工业级加密货币量化交易系统 - Industrial-grade Cryptocurrency Quantitative Trading System",
+  "private": true,
+  "packageManager": "pnpm@9.14.2",
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=9.0.0"
+  },
+  "scripts": {
+    "=== 开发脚本 ===": "",
+    "dev": "pnpm -r --parallel run dev",
+    "dev:live": "pnpm --filter @quant/live run dev",
+    "dev:backtest": "pnpm --filter @quant/backtest-app run dev",
+
+    "=== 构建脚本 ===": "",
+    "build": "pnpm -r run build",
+    "build:packages": "pnpm --filter './packages/*' run build",
+    "build:apps": "pnpm --filter './apps/*' run build",
+
+    "=== 测试脚本 ===": "",
+    "test": "pnpm -r run test",
+    "test:unit": "pnpm -r run test:unit",
+    "test:integration": "pnpm -r run test:integration",
+    "test:coverage": "pnpm -r run test:coverage",
+
+    "=== 代码质量 ===": "",
+    "lint": "eslint . --ext .ts,.tsx",
+    "lint:fix": "eslint . --ext .ts,.tsx --fix",
+    "format": "prettier --write \"**/*.{ts,tsx,json,md,yaml}\"",
+    "format:check": "prettier --check \"**/*.{ts,tsx,json,md,yaml}\"",
+    "typecheck": "pnpm -r run typecheck",
+
+    "=== 生产部署 ===": "",
+    "start:live": "pm2 start ecosystem.config.js --only quant-live",
+    "start:backtest": "pm2 start ecosystem.config.js --only quant-backtest",
+    "start:all": "pm2 start ecosystem.config.js",
+    "stop:all": "pm2 stop ecosystem.config.js",
+    "reload:all": "pm2 reload ecosystem.config.js",
+    "logs": "pm2 logs",
+
+    "=== 工具脚本 ===": "",
+    "clean": "pnpm -r run clean && rimraf node_modules",
+    "clean:dist": "pnpm -r exec rimraf dist",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "@typescript-eslint/parser": "^7.0.0",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.29.0",
+    "husky": "^9.0.0",
+    "lint-staged": "^15.2.0",
+    "prettier": "^3.2.0",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.4.0"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{json,md,yaml}": [
+      "prettier --write"
+    ]
+  }
+}

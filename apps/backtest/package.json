@@ -1,0 +1,30 @@
+{
+  "name": "@quant/backtest-app",
+  "version": "1.0.0",
+  "description": "回测启动器 - Backtest Launcher Application",
+  "type": "module",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "dev": "tsx watch src/index.ts",
+    "start": "node dist/index.js",
+    "clean": "rimraf dist .tsbuildinfo",
+    "typecheck": "tsc --noEmit",
+    "backtest": "tsx src/index.ts"
+  },
+  "dependencies": {
+    "@quant/backtest": "workspace:*",
+    "@quant/strategy": "workspace:*",
+    "commander": "^12.0.0",
+    "decimal.js": "^10.4.3",
+    "dotenv": "^16.4.1",
+    "pino": "^8.18.0",
+    "pino-pretty": "^10.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "rimraf": "^5.0.5",
+    "tsx": "^4.7.0",
+    "typescript": "^5.4.0"
+  }
+}

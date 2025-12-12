@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run typecheck)",
+      "Bash(npx tsc --noEmit src/types.ts src/funding-calculator.ts src/inventory-manager.ts src/position-sizer.ts src/arbitrage-detector.ts src/funding-arbitrage.ts)",
+      "Bash(npx tsc -p tsconfig.build.json --noEmit)",
+      "Bash(npx tsc --noEmit src/order-executor.ts src/types.ts)",
+      "Bash(npx tsc --noEmit)",
+      "Bash(npx tsc --noEmit src/prometheus.ts src/telegram-bot.ts src/daily-report.ts src/grafana-dashboards.ts src/monitor-orchestrator.ts src/index.ts)",
+      "Bash(npm install)",
+      "Bash(npx tsc --noEmit src/prometheus.ts src/telegram-bot.ts src/daily-report.ts src/grafana-dashboards.ts src/monitor-orchestrator.ts)",
+      "Bash(dir \"C:\\Users\\46745\\Desktop\\quant-trading-system\\packages\")"
+    ]
+  }
+}

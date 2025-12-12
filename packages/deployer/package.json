@@ -1,0 +1,42 @@
+{
+  "name": "@quant/deployer",
+  "version": "1.0.0",
+  "description": "策略热加载与 PM2 集群部署模块",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "clean": "rimraf dist .tsbuildinfo",
+    "typecheck": "tsc -p tsconfig.build.json --noEmit"
+  },
+  "dependencies": {
+    "chokidar": "^3.5.3",
+    "esbuild": "^0.19.0",
+    "eventemitter3": "^5.0.1",
+    "pm2": "^5.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.3.0"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "keywords": [
+    "hot-reload",
+    "pm2",
+    "cluster",
+    "deployment",
+    "quant"
+  ],
+  "license": "MIT"
+}

@@ -1,0 +1,81 @@
+{
+  // ============================================================================
+  // TypeScript 根配置文件
+  // 所有子包都会继承这个基础配置
+  // ============================================================================
+
+  "compilerOptions": {
+    // === 编译目标配置 ===
+    // 使用 ES2022，支持 Node.js 20 的所有现代特性
+    "target": "ES2022",
+
+    // === 模块系统配置 ===
+    // 使用 Node.js 16+ 的模块解析策略，支持 ESM
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+
+    // === 输出配置 ===
+    // 生成声明文件，方便包之间的类型引用
+    "declaration": true,
+    // 生成声明文件的 source map，方便调试
+    "declarationMap": true,
+    // 生成 source map，方便调试
+    "sourceMap": true,
+
+    // === 严格模式配置 ===
+    // 启用所有严格类型检查选项
+    "strict": true,
+    // 确保导入的大小写与文件系统一致
+    "forceConsistentCasingInFileNames": true,
+    // 不允许隐式 any 类型的索引访问
+    "noUncheckedIndexedAccess": true,
+    // 不允许未使用的局部变量
+    "noUnusedLocals": true,
+    // 不允许未使用的参数
+    "noUnusedParameters": true,
+    // 确保 switch 语句中的 case 不会贯穿
+    "noFallthroughCasesInSwitch": true,
+    // 检查并报告不可达代码
+    "noImplicitReturns": true,
+
+    // === 互操作性配置 ===
+    // 允许导入 JSON 模块
+    "resolveJsonModule": true,
+    // 允许从没有默认导出的模块中进行默认导入
+    "esModuleInterop": true,
+    // 允许合成默认导入
+    "allowSyntheticDefaultImports": true,
+    // 将每个文件视为独立模块（用于 transpileModule）
+    "isolatedModules": true,
+
+    // === 增量编译配置 ===
+    // 启用增量编译，加快构建速度
+    "incremental": true,
+    // 跳过库文件的类型检查，加快编译速度
+    "skipLibCheck": true,
+
+    // === 路径映射配置 ===
+    // 定义模块路径别名，方便内部包引用
+    "baseUrl": ".",
+    "paths": {
+      // 内部包路径映射 - 开发时直接引用源码
+      "@quant/exchange": ["packages/exchange/src/index.ts"],
+      "@quant/marketdata": ["packages/marketdata/src/index.ts"],
+      "@quant/backtest": ["packages/backtest/src/index.ts"],
+      "@quant/strategy": ["packages/strategy/src/index.ts"],
+      "@quant/risk": ["packages/risk/src/index.ts"],
+      "@quant/executor": ["packages/executor/src/index.ts"],
+      "@quant/monitor": ["packages/monitor/src/index.ts"]
+    }
+  },
+
+  // === 排除配置 ===
+  // 排除不需要编译的目录
+  "exclude": [
+    "node_modules",
+    "**/dist/**",
+    "**/coverage/**",
+    "**/*.test.ts",
+    "**/*.spec.ts"
+  ]
+}

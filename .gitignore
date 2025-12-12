@@ -1,0 +1,63 @@
+# ============================================================================
+# Git 忽略文件
+# 量化交易系统的忽略规则
+# ============================================================================
+
+# === 依赖 ===
+node_modules/
+
+# === 编译输出 ===
+dist/
+build/
+*.tsbuildinfo
+
+# === 日志 ===
+logs/
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# === 环境变量（包含敏感信息）===
+.env
+.env.local
+.env.*.local
+.env.production
+
+# === API 密钥和证书（绝对不能提交）===
+*.pem
+*.key
+*.crt
+secrets/
+credentials/
+
+# === IDE 配置 ===
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# === 操作系统文件 ===
+.DS_Store
+Thumbs.db
+
+# === 测试覆盖率 ===
+coverage/
+.nyc_output/
+
+# === 缓存 ===
+.cache/
+.turbo/
+.eslintcache
+
+# === 回测数据和结果（可能很大）===
+data/historical/
+backtest-results/
+
+# === PM2 ===
+.pm2/
+
+# === 临时文件 ===
+tmp/
+temp/
+*.tmp
