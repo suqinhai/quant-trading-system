@@ -13,7 +13,7 @@ import {
   type RiskCheckResult,
   type RiskConfig,
   type RiskState,
-} from './types.js';
+} from './types';
 
 // ============================================================================
 // 仓位大小规则

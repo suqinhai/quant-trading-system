@@ -16,10 +16,10 @@ import {
   type SymbolInfo,
   DEFAULT_DOWNLOAD_CONFIG,
   SUPPORTED_EXCHANGES,
-} from './types.js';
+} from './types';
 
-import { ClickHouseDatabase } from './clickhouse.js';
-import { CheckpointManager } from './checkpoint.js';
+import { ClickHouseDatabase } from './clickhouse';
+import { CheckpointManager } from './checkpoint';
 
 import {
   createExchangeInstance,
@@ -29,7 +29,7 @@ import {
   fetchMarkPriceHistoryRange,
   fetchOpenInterestHistoryRange,
   fetchAggTradesRange,
-} from './fetcher.js';
+} from './fetcher';
 
 import {
   cleanKlines,
@@ -37,7 +37,7 @@ import {
   cleanMarkPrices,
   cleanOpenInterests,
   cleanAggTrades,
-} from './cleaner.js';
+} from './cleaner';
 
 // ============================================================================
 // 下载任务类型

@@ -10,9 +10,9 @@ import pino from 'pino';
 import type { OrderRequest, Symbol } from '@quant/exchange';
 import type { Kline } from '@quant/marketdata';
 
-import { SimulatedBroker } from './broker.js';
-import { EventQueue } from './event-queue.js';
-import { StatsCalculator } from './stats.js';
+import { SimulatedBroker } from './broker';
+import { EventQueue } from './event-queue';
+import { StatsCalculator } from './stats';
 import {
   EventType,
   type BacktestConfig,
@@ -27,7 +27,7 @@ import {
   type OrderEvent,
   type PositionEvent,
   type SignalEvent,
-} from './types.js';
+} from './types';
 
 // ============================================================================
 // 引擎事件类型

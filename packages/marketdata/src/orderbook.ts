@@ -8,7 +8,7 @@ import { LRUCache } from 'lru-cache';
 
 import type { ExchangeId, Symbol } from '@quant/exchange';
 
-import type { OrderBook, OrderBookUpdate, PriceLevel } from './types.js';
+import type { OrderBook, OrderBookUpdate, PriceLevel } from './types';
 
 // ============================================================================
 // 订单簿实现

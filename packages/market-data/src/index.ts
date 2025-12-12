@@ -46,7 +46,7 @@ export type {
 
   // 统计类型
   EngineStats,
-} from './types.js';
+} from './types';
 
 // 导出常量
 export {
@@ -54,20 +54,20 @@ export {
   SUPPORTED_EXCHANGES,
   // 默认配置
   DEFAULT_CONFIG,
-} from './types.js';
+} from './types';
 
 // ============================================================================
 // 主类导出
 // ============================================================================
 
 // 导出 MarketDataEngine 主类
-export { MarketDataEngine } from './engine.js';
+export { MarketDataEngine } from './engine';
 
 // 导出 WebSocket 连接管理器（高级用法）
-export { WsConnectionManager } from './ws-manager.js';
+export { WsConnectionManager } from './ws-manager';
 
 // 导出 Redis 客户端（高级用法）
-export { RedisClient } from './redis-client.js';
+export { RedisClient } from './redis-client';
 
 // ============================================================================
 // 工具函数导出
@@ -104,7 +104,7 @@ export {
   parseOkxDepth,
   parseOkxTrades,
   parseOkxFundingRate,
-} from './normalizer.js';
+} from './normalizer';
 
 // ============================================================================
 // 使用示例

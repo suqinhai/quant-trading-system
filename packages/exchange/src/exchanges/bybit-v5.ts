@@ -8,7 +8,7 @@ import crypto from 'crypto';
 
 import {
   BaseExchange,
-} from './base-exchange.js';
+} from '../base-exchange';
 import {
   type ExchangeConfig,
   type OrderResult,
@@ -17,7 +17,7 @@ import {
   type FundingRate,
   type WsMessage,
   type BalanceItem,
-} from './schemas.js';
+} from '../schemas';
 
 // ============================================================================
 // Bybit V5 适配器

@@ -3,9 +3,9 @@
 // 根据配置创建对应的交易所适配器实例
 // ============================================================================
 
-import { BaseExchange } from './base.js';
-import { BinanceExchange } from './exchanges/binance.js';
-import { ExchangeError, ExchangeErrorCode, type ExchangeConfig, type ExchangeId } from './types.js';
+import { BaseExchange } from './base';
+import { BinanceExchange } from './exchanges/binance';
+import { ExchangeError, ExchangeErrorCode, type ExchangeConfig, type ExchangeId } from './types';
 
 // ============================================================================
 // 支持的交易所注册表

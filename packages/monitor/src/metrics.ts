@@ -12,7 +12,7 @@ import type {
   MetricPoint,
   MetricType,
   TradingStats,
-} from './types.js';
+} from './types';
 
 // ============================================================================
 // 指标收集器

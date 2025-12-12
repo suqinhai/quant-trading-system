@@ -13,7 +13,7 @@ import {
   type SlippageModelType,
   DEFAULT_SLIPPAGE_CONFIG,
   getPositionKey,
-} from './types.js';
+} from './types';
 
 // ============================================================================
 // 订单簿类型定义

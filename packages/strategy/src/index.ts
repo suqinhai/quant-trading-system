@@ -4,22 +4,22 @@
 // ============================================================================
 
 // === 技术指标 ===
-export { Indicators } from './indicators.js';
+export { Indicators } from './indicators';
 export type {
   IndicatorResult,
   MACDResult,
   BollingerBandsResult,
   RSIResult,
   ATRResult,
-} from './indicators.js';
+} from './indicators';
 
 // === 策略基类 ===
-export { BaseStrategy } from './base.js';
-export type { StrategyParams, StrategyState as BaseStrategyState } from './base.js';
+export { BaseStrategy } from './base';
+export type { StrategyParams, StrategyState as BaseStrategyState } from './base';
 
 // === 示例策略 ===
-export { DualMAStrategy, RSIStrategy } from './examples/index.js';
-export type { DualMAParams, RSIParams } from './examples/index.js';
+export { DualMAStrategy, RSIStrategy } from './examples/index';
+export type { DualMAParams, RSIParams } from './examples/index';
 
 // ============================================================================
 // 资金费率套利策略导出
@@ -61,14 +61,14 @@ export type {
 
   // 信号类型
   TradeSignal,
-} from './types.js';
+} from './types';
 
 // === 常量导出 ===
 export {
   SUPPORTED_EXCHANGES,
   DEFAULT_RISK_LIMITS,
   DEFAULT_FUNDING_ARBITRAGE_CONFIG,
-} from './types.js';
+} from './types';
 
 // === 工具函数导出 ===
 export {
@@ -76,53 +76,53 @@ export {
   calculateFundingSpread,
   generateArbitrageId,
   generateId,
-} from './types.js';
+} from './types';
 
 // === 资金费率计算器 ===
 export {
   FundingCalculator,
   createFundingCalculator,
-} from './funding-calculator.js';
+} from './funding-calculator';
 
 // === 库存管理器 ===
 export type {
   InventoryConfig,
-} from './inventory-manager.js';
+} from './inventory-manager';
 
 export {
   InventoryManager,
   createInventoryManager,
   DEFAULT_INVENTORY_CONFIG,
-} from './inventory-manager.js';
+} from './inventory-manager';
 
 // === 仓位计算器 ===
 export type {
   PositionSizerConfig,
-} from './position-sizer.js';
+} from './position-sizer';
 
 export {
   PositionSizer,
   createPositionSizer,
   DEFAULT_POSITION_SIZER_CONFIG,
-} from './position-sizer.js';
+} from './position-sizer';
 
 // === 套利检测器 ===
 export type {
   ArbitrageDetectorConfig,
   ArbitrageOpportunityDetails,
-} from './arbitrage-detector.js';
+} from './arbitrage-detector';
 
 export {
   ArbitrageDetector,
   createArbitrageDetector,
   DEFAULT_ARBITRAGE_DETECTOR_CONFIG,
-} from './arbitrage-detector.js';
+} from './arbitrage-detector';
 
 // === 资金费率套利策略 ===
 export {
   FundingArbitrageStrategy,
   createFundingArbitrageStrategy,
-} from './funding-arbitrage.js';
+} from './funding-arbitrage';
 
 // ============================================================================
 // 风险管理器导出
@@ -138,7 +138,7 @@ export type {
   RiskEvent,
   RiskState,
   Executor,
-} from './risk-manager.js';
+} from './risk-manager';
 
 // === 风险管理器 ===
 export {
@@ -146,7 +146,7 @@ export {
   getRiskManager,
   resetRiskManager,
   DEFAULT_RISK_MANAGER_CONFIG,
-} from './risk-manager.js';
+} from './risk-manager';
 
 // ============================================================================
 // 订单执行器导出
@@ -163,14 +163,14 @@ export type {
   AccountConfig,
   OrderExecutorConfig,
   ExchangeAdapter,
-} from './order-executor.js';
+} from './order-executor';
 
 // === 订单执行器 ===
 export {
   OrderExecutor,
   createOrderExecutor,
   DEFAULT_EXECUTOR_CONFIG,
-} from './order-executor.js';
+} from './order-executor';
 
 // ============================================================================
 // 使用示例

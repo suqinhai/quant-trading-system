@@ -7,7 +7,7 @@
 import {
   type BacktestEvent,
   type Timestamp,
-} from './types.js';
+} from './types';
 
 // ============================================================================
 // 事件比较函数类型

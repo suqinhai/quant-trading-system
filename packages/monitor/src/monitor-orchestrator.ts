@@ -12,7 +12,7 @@ import {
   type MarginRecord,
   type LatencyRecord,
   type ApiErrorRecord,
-} from './prometheus.js';
+} from './prometheus';
 import {
   TelegramBot,
   createTelegramBot,
@@ -21,19 +21,19 @@ import {
   type PerformanceReport,
   type ExchangeMarginRatio,
   type ApiStats,
-} from './telegram-bot.js';
+} from './telegram-bot';
 import {
   DailyReportGenerator,
   createDailyReportGenerator,
   type ReportGeneratorConfig,
   type TradeRecord,
-} from './daily-report.js';
+} from './daily-report';
 import {
   GrafanaDashboardGenerator,
   createGrafanaDashboardGenerator,
   type DashboardGeneratorConfig,
   type GrafanaDashboard,
-} from './grafana-dashboards.js';
+} from './grafana-dashboards';
 
 // ============================================================================
 // 类型定义

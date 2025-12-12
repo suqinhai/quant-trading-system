@@ -11,7 +11,7 @@ import {
   type PositionSizeResult,
   type RiskLimits,
   DEFAULT_RISK_LIMITS,
-} from './types.js';
+} from './types';
 
 // ============================================================================
 // 配置接口

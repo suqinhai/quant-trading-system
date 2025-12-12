@@ -8,7 +8,7 @@ import {
   type ExchangeId,
   type Timestamp,
   type OrderSide,
-} from './types.js';
+} from './types';
 
 // ============================================================================
 // 类型定义

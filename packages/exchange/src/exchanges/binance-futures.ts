@@ -4,12 +4,11 @@
 // ============================================================================
 
 import ccxt from 'ccxt';
-import crypto from 'crypto';
 
 import {
   BaseExchange,
   type ExchangeEvents,
-} from './base-exchange.js';
+} from '../base-exchange';
 import {
   type ExchangeConfig,
   type OrderResult,
@@ -17,9 +16,8 @@ import {
   type Balance,
   type FundingRate,
   type WsMessage,
-  type WsMessageType,
   type BalanceItem,
-} from './schemas.js';
+} from '../schemas';
 
 // ============================================================================
 // Binance Futures 适配器

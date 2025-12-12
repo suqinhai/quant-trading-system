@@ -7,7 +7,7 @@
 export {
   // 事件类型枚举
   EventType,
-} from './types.js';
+} from './types';
 
 export type {
   // 基础事件
@@ -37,13 +37,13 @@ export type {
   IEventQueue,
   IBacktestStrategy,
   BacktestContext,
-} from './types.js';
+} from './types';
 
 // === 核心组件导出 ===
-export { EventQueue } from './event-queue.js';
-export { SimulatedBroker } from './broker.js';
-export { StatsCalculator } from './stats.js';
-export { BacktestEngine } from './engine.js';
+export { EventQueue } from './event-queue';
+export { SimulatedBroker } from './broker';
+export { StatsCalculator } from './stats';
+export { BacktestEngine } from './engine';
 
 // 导出引擎事件类型
-export type { BacktestEngineEvents } from './engine.js';
+export type { BacktestEngineEvents } from './engine';

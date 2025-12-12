@@ -10,8 +10,8 @@ import WebSocket from 'ws';
 
 import type { ExchangeId, Symbol } from '@quant/exchange';
 
-import { KlineManager } from './kline.js';
-import { OrderBookManager } from './orderbook.js';
+import { KlineManager } from './kline';
+import { OrderBookManager } from './orderbook';
 import {
   getSubscriptionKey,
   type Kline,
@@ -24,7 +24,7 @@ import {
   type Subscription,
   type Tick,
   type Ticker,
-} from './types.js';
+} from './types';
 
 // ============================================================================
 // 类型定义

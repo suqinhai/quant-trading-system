@@ -11,7 +11,7 @@ import type {
   BacktestStats,
   ClosedTrade,
   EquityPoint,
-} from './types.js';
+} from './types';
 
 // ============================================================================
 // 常量定义

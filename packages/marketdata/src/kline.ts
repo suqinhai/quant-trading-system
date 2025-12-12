@@ -8,7 +8,7 @@ import { LRUCache } from 'lru-cache';
 
 import type { ExchangeId, Symbol } from '@quant/exchange';
 
-import type { Kline, KlineInterval } from './types.js';
+import type { Kline, KlineInterval } from './types';
 
 // ============================================================================
 // K 线序列

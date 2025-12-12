@@ -12,7 +12,7 @@ import {
   type FundingRatePrediction,
   SUPPORTED_EXCHANGES,
   annualizeFundingRate,
-} from './types.js';
+} from './types';
 
 // ============================================================================
 // 配置常量

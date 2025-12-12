@@ -16,8 +16,8 @@ import type {
   OrderEvent,
   PositionEvent,
   SlippageConfig,
-} from './types.js';
-import { EventType } from './types.js';
+} from './types';
+import { EventType } from './types';
 
 // ============================================================================
 // 类型定义

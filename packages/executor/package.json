@@ -25,7 +25,8 @@
     "@quant/risk": "workspace:*",
     "decimal.js": "^10.4.3",
     "eventemitter3": "^5.0.1",
-    "pino": "^8.18.0"
+    "pino": "^8.18.0",
+    "uuid": "^9.0.0"
   },
   "devDependencies": {
     "rimraf": "^5.0.5",

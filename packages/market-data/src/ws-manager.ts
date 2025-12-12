@@ -11,7 +11,7 @@ import {
   type ChannelType,
   type WsConnectionState,
   type WsConnectionInfo,
-} from './types.js';
+} from './types';
 
 // ============================================================================
 // 类型定义

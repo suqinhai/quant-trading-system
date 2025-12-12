@@ -14,7 +14,7 @@ import {
   type RawOpenInterest,
   type RawAggTrade,
   type SymbolInfo,
-} from './types.js';
+} from './types';
 
 // ============================================================================
 // 交易所实例创建

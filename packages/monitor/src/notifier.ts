@@ -15,7 +15,7 @@ import type {
   NotificationChannelConfig,
   TelegramConfig,
   WebhookConfig,
-} from './types.js';
+} from './types';
 
 // ============================================================================
 // 通知发送器

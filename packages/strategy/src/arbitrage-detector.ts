@@ -13,8 +13,8 @@ import {
   type FundingRatePrediction,
   generateArbitrageId,
   calculateFundingSpread,
-} from './types.js';
-import { type FundingCalculator } from './funding-calculator.js';
+} from './types';
+import { type FundingCalculator } from './funding-calculator';
 
 // ============================================================================
 // 配置接口

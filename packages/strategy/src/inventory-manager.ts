@@ -12,7 +12,7 @@ import {
   type TotalInventory,
   type RebalanceAction,
   SUPPORTED_EXCHANGES,
-} from './types.js';
+} from './types';
 
 // ============================================================================
 // 配置接口

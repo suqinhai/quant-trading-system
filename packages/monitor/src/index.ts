@@ -41,7 +41,7 @@ export type {
 
   // 接口
   IHealthChecker,
-} from './types.js';
+} from './types';
 
 // === 健康检查导出 ===
 export {
@@ -49,16 +49,16 @@ export {
   EventLoopHealthChecker,
   CustomHealthChecker,
   HealthCheckManager,
-} from './health.js';
+} from './health';
 
 // === 指标收集器导出 ===
-export { MetricsCollector } from './metrics.js';
+export { MetricsCollector } from './metrics';
 
 // === 通知发送器导出 ===
-export { NotificationSender } from './notifier.js';
+export { NotificationSender } from './notifier';
 
 // === 监控中心导出 ===
-export { MonitorCenter } from './monitor.js';
+export { MonitorCenter } from './monitor';
 
 // ============================================================================
 // Prometheus 指标收集器
@@ -70,7 +70,7 @@ export {
   createPrometheusCollector,
   // 默认配置
   DEFAULT_PROMETHEUS_CONFIG,
-} from './prometheus.js';
+} from './prometheus';
 
 // Prometheus 类型导出
 export type {
@@ -88,7 +88,7 @@ export type {
   PrometheusConfig,
   // 事件类型
   PrometheusEvents,
-} from './prometheus.js';
+} from './prometheus';
 
 // ============================================================================
 // Telegram 机器人通知服务
@@ -100,7 +100,7 @@ export {
   createTelegramBot,
   // 默认配置
   DEFAULT_TELEGRAM_CONFIG,
-} from './telegram-bot.js';
+} from './telegram-bot';
 
 // Telegram 类型导出
 export type {
@@ -121,7 +121,7 @@ export type {
   ApiStats,
   // 数据提供器接口
   DataProvider,
-} from './telegram-bot.js';
+} from './telegram-bot';
 
 // ============================================================================
 // 每日报告生成器
@@ -134,7 +134,7 @@ export {
   // 默认配置
   DEFAULT_REPORT_CONFIG,
   DEFAULT_CHART_CONFIG,
-} from './daily-report.js';
+} from './daily-report';
 
 // 每日报告类型导出
 export type {
@@ -151,7 +151,7 @@ export type {
   HistoricalData,
   // 交易记录
   TradeRecord,
-} from './daily-report.js';
+} from './daily-report';
 
 // ============================================================================
 // Grafana 仪表盘生成器
@@ -163,7 +163,7 @@ export {
   createGrafanaDashboardGenerator,
   // 默认配置
   DEFAULT_GENERATOR_CONFIG,
-} from './grafana-dashboards.js';
+} from './grafana-dashboards';
 
 // Grafana 类型导出
 export type {
@@ -179,7 +179,7 @@ export type {
   DashboardRow,
   GrafanaDashboard,
   DashboardGeneratorConfig,
-} from './grafana-dashboards.js';
+} from './grafana-dashboards';
 
 // ============================================================================
 // 监控协调器
@@ -191,7 +191,7 @@ export {
   createMonitorOrchestrator,
   // 默认配置
   DEFAULT_ORCHESTRATOR_CONFIG,
-} from './monitor-orchestrator.js';
+} from './monitor-orchestrator';
 
 // 监控协调器类型导出
 export type {
@@ -202,4 +202,4 @@ export type {
   LatencyStats,
   // 事件类型
   MonitorEvents as OrchestratorEvents,
-} from './monitor-orchestrator.js';
+} from './monitor-orchestrator';

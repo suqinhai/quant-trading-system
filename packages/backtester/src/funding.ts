@@ -9,9 +9,9 @@ import {
   type FundingEvent,
   type Timestamp,
   getPositionKey,
-} from './types.js';
+} from './types';
 
-import { AccountManager } from './account.js';
+import { AccountManager } from './account';
 
 // ============================================================================
 // 资金费率配置

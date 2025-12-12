@@ -19,9 +19,9 @@ import {
   DEFAULT_FEE_CONFIG,
   generateId,
   getPositionKey,
-} from './types.js';
+} from './types';
 
-import { OrderBookManager } from './order-book.js';
+import { OrderBookManager } from './order-book';
 
 // ============================================================================
 // 撮合结果类型

@@ -14,7 +14,7 @@ import {
   type LiquidationEvent,
   getPositionKey,
   generateId,
-} from './types.js';
+} from './types';
 
 // ============================================================================
 // 账户配置

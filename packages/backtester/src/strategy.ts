@@ -16,7 +16,7 @@ import {
   type KlineEvent,
   type OrderFilledEvent,
   type LiquidationEvent,
-} from './types.js';
+} from './types';
 
 // ============================================================================
 // 策略管理器配置

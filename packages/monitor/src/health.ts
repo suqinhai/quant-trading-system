@@ -10,7 +10,7 @@ import type {
   HealthStatus,
   IHealthChecker,
   SystemHealth,
-} from './types.js';
+} from './types';
 
 // ============================================================================
 // 内置健康检查器

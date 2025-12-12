@@ -12,9 +12,9 @@ import {
   type DataType,
   type Checkpoint,
   type CheckpointStore,
-} from './types.js';
+} from './types';
 
-import { ClickHouseDatabase } from './clickhouse.js';
+import { ClickHouseDatabase } from './clickhouse';
 
 // ============================================================================
 // 文件检查点存储

@@ -28,7 +28,7 @@ export type {
 
   // 执行器配置
   ExecutorConfig,
-} from './types.js';
+} from './types';
 
 // === 执行器导出 ===
-export { OrderExecutor } from './executor.js';
+export { OrderExecutor } from './executor';

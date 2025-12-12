@@ -27,15 +27,15 @@ import {
   DEFAULT_BACKTEST_CONFIG,
   getPositionKey,
   generateId,
-} from './types.js';
+} from './types';
 
-import { EventBus, createEventBus } from './event-bus.js';
-import { OrderBookManager, createOrderBookManager } from './order-book.js';
-import { MatchingEngine, createMatchingEngine } from './matching-engine.js';
-import { AccountManager, createAccountManager } from './account.js';
-import { FundingSimulator, createFundingSimulator } from './funding.js';
-import { DataLoader, createDataLoader } from './data-loader.js';
-import { StrategyManager, createStrategyManager } from './strategy.js';
+import { EventBus, createEventBus } from './event-bus';
+import { OrderBookManager, createOrderBookManager } from './order-book';
+import { MatchingEngine, createMatchingEngine } from './matching-engine';
+import { AccountManager, createAccountManager } from './account';
+import { FundingSimulator, createFundingSimulator } from './funding';
+import { DataLoader, createDataLoader } from './data-loader';
+import { StrategyManager, createStrategyManager } from './strategy';
 
 // ============================================================================
 // 回测引擎配置

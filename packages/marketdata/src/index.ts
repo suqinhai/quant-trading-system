@@ -31,15 +31,15 @@ export type {
 
   // 事件
   MarketDataEvents,
-} from './types.js';
+} from './types';
 
 // 导出工具函数
-export { getSubscriptionKey } from './types.js';
+export { getSubscriptionKey } from './types';
 
 // === 管理器导出 ===
-export { OrderBookManager } from './orderbook.js';
-export { KlineManager } from './kline.js';
+export { OrderBookManager } from './orderbook';
+export { KlineManager } from './kline';
 
 // === 引擎导出 ===
-export { MarketDataEngine } from './engine.js';
-export type { MarketDataEngineConfig } from './engine.js';
+export { MarketDataEngine } from './engine';
+export type { MarketDataEngineConfig } from './engine';

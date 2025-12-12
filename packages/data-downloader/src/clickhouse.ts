@@ -16,7 +16,7 @@ import {
   type CleanOpenInterest,
   type CleanAggTrade,
   DEFAULT_CLICKHOUSE_CONFIG,
-} from './types.js';
+} from './types';
 
 // ============================================================================
 // 表结构定义

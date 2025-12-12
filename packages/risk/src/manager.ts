@@ -9,7 +9,7 @@ import pino from 'pino';
 
 import type { OrderRequest, Position, Symbol } from '@quant/exchange';
 
-import { getBuiltInRules } from './rules.js';
+import { getBuiltInRules } from './rules';
 import {
   RiskLevel,
   type IRiskRule,
@@ -17,7 +17,7 @@ import {
   type RiskConfig,
   type RiskEvents,
   type RiskState,
-} from './types.js';
+} from './types';
 
 // ============================================================================
 // 风控管理器

@@ -17,7 +17,7 @@ import type {
   SignalDirection,
 } from '@quant/backtest';
 
-import { Indicators } from './indicators.js';
+import { Indicators } from './indicators';
 
 // ============================================================================
 // 类型定义

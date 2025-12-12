@@ -44,7 +44,7 @@ export type {
   // 工具类型
   SymbolInfo,
   DataStats,
-} from './types.js';
+} from './types';
 
 // 导出常量
 export {
@@ -56,24 +56,24 @@ export {
   DEFAULT_DOWNLOAD_CONFIG,
   // 默认 ClickHouse 配置
   DEFAULT_CLICKHOUSE_CONFIG,
-} from './types.js';
+} from './types';
 
 // ============================================================================
 // 主类导出
 // ============================================================================
 
 // 导出数据下载器
-export { DataDownloader, createDownloader } from './downloader.js';
+export { DataDownloader, createDownloader } from './downloader';
 
 // 导出 ClickHouse 数据库客户端
-export { ClickHouseDatabase } from './clickhouse.js';
+export { ClickHouseDatabase } from './clickhouse';
 
 // 导出检查点管理器
 export {
   CheckpointManager,
   FileCheckpointStore,
   ClickHouseCheckpointStore,
-} from './checkpoint.js';
+} from './checkpoint';
 
 // ============================================================================
 // 数据获取函数导出
@@ -106,7 +106,7 @@ export {
   // 工具
   getSymbolListingDate,
   hasFeature,
-} from './fetcher.js';
+} from './fetcher';
 
 // ============================================================================
 // 数据清洗函数导出
@@ -132,7 +132,7 @@ export {
   fillMissingKlines,
   // 统计计算
   calculateKlineStats,
-} from './cleaner.js';
+} from './cleaner';
 
 // ============================================================================
 // 使用示例

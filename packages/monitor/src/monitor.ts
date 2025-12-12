@@ -7,9 +7,9 @@ import EventEmitter from 'eventemitter3';
 import pino from 'pino';
 import { v4 as uuidv4 } from 'uuid';
 
-import { HealthCheckManager } from './health.js';
-import { MetricsCollector } from './metrics.js';
-import { NotificationSender } from './notifier.js';
+import { HealthCheckManager } from './health';
+import { MetricsCollector } from './metrics';
+import { NotificationSender } from './notifier';
 import type {
   Alert,
   AlertLevel,
@@ -20,7 +20,7 @@ import type {
   MonitorEvents,
   NotificationChannel,
   SystemHealth,
-} from './types.js';
+} from './types';
 
 // ============================================================================
 // 监控中心

@@ -23,7 +23,6 @@ import {
   type Trade,
   type Market,
   type WsMessage,
-  type WsMessageType,
   type Timeframe,
   type ExchangeError,
   type ExchangeErrorType,
@@ -39,7 +38,7 @@ import {
   TradeSchema,
   MarketSchema,
   validate,
-} from './schemas.js';
+} from './schemas';
 
 // ============================================================================
 // 类型定义

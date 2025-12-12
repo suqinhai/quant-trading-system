@@ -50,7 +50,7 @@ export {
   // 验证辅助函数
   validate,
   safeValidate,
-} from './schemas.js';
+} from './schemas';
 
 // 导出所有类型（从 Zod schemas 推断）
 export type {
@@ -91,17 +91,17 @@ export type {
   // 错误相关类型
   ExchangeErrorType,
   ExchangeError,
-} from './schemas.js';
+} from './schemas';
 
 // ============================================================================
 // 基类和异常导出
 // ============================================================================
 
 // 导出抽象基类（用于扩展自定义交易所）
-export { BaseExchange, ExchangeException } from './exchanges/base-exchange.js';
+export { BaseExchange, ExchangeException } from './base-exchange';
 
 // 导出事件类型
-export type { ExchangeEvents } from './exchanges/base-exchange.js';
+export type { ExchangeEvents } from './base-exchange';
 
 // ============================================================================
 // 交易所适配器导出
@@ -115,7 +115,7 @@ export {
   BybitV5,
   // OKX 适配器
   OKX,
-} from './exchanges/index.js';
+} from './exchanges/index';
 
 // ============================================================================
 // 工厂函数和辅助函数导出
@@ -133,10 +133,10 @@ export {
   getExchangeFeatures,
   // 支持的交易所列表
   SUPPORTED_EXCHANGES,
-} from './exchanges/index.js';
+} from './exchanges/index';
 
 // 导出交易所名称类型
-export type { ExchangeName } from './exchanges/index.js';
+export type { ExchangeName } from './exchanges/index';
 
 // ============================================================================
 // 使用示例

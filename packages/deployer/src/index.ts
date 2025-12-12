@@ -19,7 +19,7 @@ export {
   type HotReloadConfig,
   type StrategyModule,
   type HotReloadEvents,
-} from './hot-reload.js';
+} from './hot-reload';
 
 // ============================================================================
 // PM2 配置模块导出
@@ -38,7 +38,7 @@ export {
   type PM2DeployConfig,
   type PM2EcosystemConfig,
   type ClusterConfigOptions,
-} from './pm2-config.js';
+} from './pm2-config';
 
 // ============================================================================
 // 集群管理模块导出
@@ -71,15 +71,15 @@ export {
   type ClusterManagerEvents,
   type ZeroDowntimeConfig,
   type ConnectionDrainerConfig,
-} from './cluster-manager.js';
+} from './cluster-manager';
 
 // ============================================================================
 // 便捷组合函数
 // ============================================================================
 
 // 导入所需模块
-import { createHotReloadManager, type HotReloadConfig } from './hot-reload.js';
-import { createClusterManager, type ClusterManagerConfig } from './cluster-manager.js';
+import { createHotReloadManager, type HotReloadConfig } from './hot-reload';
+import { createClusterManager, type ClusterManagerConfig } from './cluster-manager';
 
 /**
  * 部署器配置接口

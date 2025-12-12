@@ -9,7 +9,7 @@ import type { Symbol } from '@quant/exchange';
 import type { Kline } from '@quant/marketdata';
 import type { BacktestContext } from '@quant/backtest';
 
-import { BaseStrategy, type StrategyParams } from './base.js';
+import { BaseStrategy, type StrategyParams } from './base';
 
 // ============================================================================
 // 参数接口

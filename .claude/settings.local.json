@@ -13,7 +13,10 @@
       "Bash(npm run dev:live:*)",
       "Bash(pnpm install:*)",
       "Bash(pnpm build:*)",
-      "Bash(pnpm run build)"
+      "Bash(pnpm run build)",
+      "Bash(timeout 10 npm run dev:live:*)",
+      "Bash(find:*)",
+      "Bash(timeout 15 npm run dev:live:*)"
     ]
   }
 }

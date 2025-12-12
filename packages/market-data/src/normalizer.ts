@@ -12,7 +12,7 @@ import {
   type UnifiedFundingRate,
   type UnifiedMarketData,
   type DepthLevel,
-} from './types.js';
+} from './types';
 
 // ============================================================================
 // 交易对符号转换

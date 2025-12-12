@@ -17,12 +17,12 @@ import {
   type DownloadConfig,
   SUPPORTED_EXCHANGES,
   SUPPORTED_DATA_TYPES,
-} from './types.js';
+} from './types';
 
-import { ClickHouseDatabase } from './clickhouse.js';
-import { CheckpointManager } from './checkpoint.js';
-import { DataDownloader } from './downloader.js';
-import { createExchangeInstance, fetchMarkets } from './fetcher.js';
+import { ClickHouseDatabase } from './clickhouse';
+import { CheckpointManager } from './checkpoint';
+import { DataDownloader } from './downloader';
+import { createExchangeInstance, fetchMarkets } from './fetcher';
 
 // ============================================================================
 // 版本信息

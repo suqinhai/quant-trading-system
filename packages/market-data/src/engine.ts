@@ -21,15 +21,15 @@ import {
   type UnifiedMarketData,
   SUPPORTED_EXCHANGES,
   DEFAULT_CONFIG,
-} from './types.js';
+} from './types';
 
-import { WsConnectionManager } from './ws-manager.js';
-import { RedisClient } from './redis-client.js';
+import { WsConnectionManager } from './ws-manager';
+import { RedisClient } from './redis-client';
 import {
   parseMessage,
   normalizeSymbol,
   denormalizeSymbol,
-} from './normalizer.js';
+} from './normalizer';
 
 // ============================================================================
 // 订阅消息构建器

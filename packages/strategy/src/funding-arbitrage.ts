@@ -15,23 +15,23 @@ import {
   type FundingArbitrageConfig,
   DEFAULT_FUNDING_ARBITRAGE_CONFIG,
   generateId,
-} from './types.js';
+} from './types';
 import {
   FundingCalculator,
   createFundingCalculator,
-} from './funding-calculator.js';
+} from './funding-calculator';
 import {
   InventoryManager,
   createInventoryManager,
-} from './inventory-manager.js';
+} from './inventory-manager';
 import {
   PositionSizer,
   createPositionSizer,
-} from './position-sizer.js';
+} from './position-sizer';
 import {
   ArbitrageDetector,
   createArbitrageDetector,
-} from './arbitrage-detector.js';
+} from './arbitrage-detector';
 
 // ============================================================================
 // 策略事件类型

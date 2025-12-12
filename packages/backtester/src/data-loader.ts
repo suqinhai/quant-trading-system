@@ -17,7 +17,7 @@ import {
   type BacktestEvent,
   type PriceLevel,
   type ClickHouseConfig,
-} from './types.js';
+} from './types';
 
 // ============================================================================
 // 数据加载器配置

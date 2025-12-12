@@ -3,8 +3,8 @@
 // 定义所有交易所适配器必须实现的接口
 // ============================================================================
 
-import type Decimal from 'decimal.js';
-import EventEmitter from 'eventemitter3';
+import type { Decimal } from 'decimal.js';
+import { EventEmitter } from 'eventemitter3';
 
 import type {
   Account,
@@ -18,7 +18,7 @@ import type {
   Position,
   Symbol,
   Trade,
-} from './types.js';
+} from './types';
 
 // ============================================================================
 // 事件类型定义

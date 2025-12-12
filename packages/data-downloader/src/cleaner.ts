@@ -16,7 +16,7 @@ import {
   type CleanMarkPrice,
   type CleanOpenInterest,
   type CleanAggTrade,
-} from './types.js';
+} from './types';
 
 // ============================================================================
 // 数据验证函数

@@ -11,7 +11,7 @@ import {
   type TimeSeriesRetention,
   type UnifiedMarketData,
   DEFAULT_CONFIG,
-} from './types.js';
+} from './types';
 
 // ============================================================================
 // 类型定义

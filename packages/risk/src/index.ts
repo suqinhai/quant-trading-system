@@ -4,7 +4,7 @@
 // ============================================================================
 
 // === 类型导出 ===
-export { RiskLevel } from './types.js';
+export { RiskLevel } from './types';
 
 export type {
   // 风控结果
@@ -25,7 +25,7 @@ export type {
 
   // 接口
   IRiskRule,
-} from './types.js';
+} from './types';
 
 // === 规则导出 ===
 export {
@@ -39,7 +39,7 @@ export {
   CircuitBreakerRule,
   SymbolFilterRule,
   getBuiltInRules,
-} from './rules.js';
+} from './rules';
 
 // === 管理器导出 ===
-export { RiskManager } from './manager.js';
+export { RiskManager } from './manager';

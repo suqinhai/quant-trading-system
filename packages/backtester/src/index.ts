@@ -56,14 +56,14 @@ export type {
   EquityPoint,
   BacktestStats,
   BacktestResult,
-} from './types.js';
+} from './types';
 
 // 导出常量
 export {
   DEFAULT_FEE_CONFIG,
   DEFAULT_SLIPPAGE_CONFIG,
   DEFAULT_BACKTEST_CONFIG,
-} from './types.js';
+} from './types';
 
 // 导出工具函数
 export {
@@ -72,7 +72,7 @@ export {
   generateId,
   timestampToString,
   stringToTimestamp,
-} from './types.js';
+} from './types';
 
 // ============================================================================
 // 事件总线导出
@@ -82,7 +82,7 @@ export {
   EventBus,
   EventPriorityQueue,
   createEventBus,
-} from './event-bus.js';
+} from './event-bus';
 
 // ============================================================================
 // 订单簿导出
@@ -92,13 +92,13 @@ export type {
   SlippageResult,
   PriceLevelFill,
   OrderBookSnapshot,
-} from './order-book.js';
+} from './order-book';
 
 export {
   OrderBook,
   OrderBookManager,
   createOrderBookManager,
-} from './order-book.js';
+} from './order-book';
 
 // ============================================================================
 // 撮合引擎导出
@@ -108,12 +108,12 @@ export type {
   MatchResult,
   ModifyOrderRequest,
   MatchingEngineConfig,
-} from './matching-engine.js';
+} from './matching-engine';
 
 export {
   MatchingEngine,
   createMatchingEngine,
-} from './matching-engine.js';
+} from './matching-engine';
 
 // ============================================================================
 // 账户管理导出
@@ -124,13 +124,13 @@ export type {
   OpenPositionResult,
   ClosePositionResult,
   LiquidationResult,
-} from './account.js';
+} from './account';
 
 export {
   AccountManager,
   createAccountManager,
   DEFAULT_ACCOUNT_CONFIG,
-} from './account.js';
+} from './account';
 
 // ============================================================================
 // 资金费率导出
@@ -139,7 +139,7 @@ export {
 export type {
   FundingConfig,
   FundingRecord,
-} from './funding.js';
+} from './funding';
 
 export {
   FundingSimulator,
@@ -147,7 +147,7 @@ export {
   calculateFundingFee,
   getNextSettlementTime,
   DEFAULT_FUNDING_CONFIG,
-} from './funding.js';
+} from './funding';
 
 // ============================================================================
 // 数据加载器导出
@@ -156,13 +156,13 @@ export {
 export type {
   DataLoaderConfig,
   LoadStats,
-} from './data-loader.js';
+} from './data-loader';
 
 export {
   DataLoader,
   createDataLoader,
   DEFAULT_DATA_LOADER_CONFIG,
-} from './data-loader.js';
+} from './data-loader';
 
 // ============================================================================
 // 策略管理导出
@@ -170,14 +170,14 @@ export {
 
 export type {
   StrategyManagerConfig,
-} from './strategy.js';
+} from './strategy';
 
 export {
   StrategyManager,
   createStrategyManager,
   BaseStrategy,
   ExampleGridStrategy,
-} from './strategy.js';
+} from './strategy';
 
 // ============================================================================
 // 回测引擎导出
@@ -186,12 +186,12 @@ export {
 export type {
   BacktesterOptions,
   BacktestProgress,
-} from './backtester.js';
+} from './backtester';
 
 export {
   EventDrivenBacktester,
   createBacktester,
-} from './backtester.js';
+} from './backtester';
 
 // ============================================================================
 // 使用示例

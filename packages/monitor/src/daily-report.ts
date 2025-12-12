@@ -9,7 +9,7 @@ import type {
   StrategyPerformance,
   ExchangeMarginRatio,
   ApiStats,
-} from './telegram-bot.js';
+} from './telegram-bot';
 
 // ============================================================================
 // 类型定义

@@ -4,20 +4,20 @@
 // ============================================================================
 
 // 导出基类
-export { BaseExchange, ExchangeException } from './base-exchange.js';
-export type { ExchangeEvents } from './base-exchange.js';
+export { BaseExchange, ExchangeException } from '../base-exchange';
+export type { ExchangeEvents } from '../base-exchange';
 
 // 导出各交易所适配器
-export { BinanceFutures } from './binance-futures.js';
-export { BybitV5 } from './bybit-v5.js';
-export { OKX } from './okx.js';
+export { BinanceFutures } from './binance-futures';
+export { BybitV5 } from './bybit-v5';
+export { OKX } from './okx';
 
 // 导入类型（用于工厂函数）
-import { BaseExchange } from './base-exchange.js';
-import { BinanceFutures } from './binance-futures.js';
-import { BybitV5 } from './bybit-v5.js';
-import { OKX } from './okx.js';
-import type { ExchangeConfig } from '../schemas.js';
+import { BaseExchange } from '../base-exchange';
+import { BinanceFutures } from './binance-futures';
+import { BybitV5 } from './bybit-v5';
+import { OKX } from './okx';
+import type { ExchangeConfig } from '../schemas';
 
 // ============================================================================
 // 支持的交易所类型

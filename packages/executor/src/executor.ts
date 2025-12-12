@@ -20,7 +20,7 @@ import type {
   ExecutionStatus,
   ExecutorConfig,
   ExecutorEvents,
-} from './types.js';
+} from './types';
 
 // ============================================================================
 // 执行器实现
