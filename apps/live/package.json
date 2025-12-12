@@ -20,6 +20,7 @@
     "@quant/monitor": "workspace:*",
     "decimal.js": "^10.4.3",
     "dotenv": "^16.4.1",
+    "eventemitter3": "^5.0.1",
     "pino": "^8.18.0",
     "pino-pretty": "^10.3.1"
   },

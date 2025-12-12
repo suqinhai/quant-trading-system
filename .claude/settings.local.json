@@ -9,7 +9,11 @@
       "Bash(npx tsc --noEmit src/prometheus.ts src/telegram-bot.ts src/daily-report.ts src/grafana-dashboards.ts src/monitor-orchestrator.ts src/index.ts)",
       "Bash(npm install)",
       "Bash(npx tsc --noEmit src/prometheus.ts src/telegram-bot.ts src/daily-report.ts src/grafana-dashboards.ts src/monitor-orchestrator.ts)",
-      "Bash(dir \"C:\\Users\\46745\\Desktop\\quant-trading-system\\packages\")"
+      "Bash(dir \"C:\\Users\\46745\\Desktop\\quant-trading-system\\packages\")",
+      "Bash(npm run dev:live:*)",
+      "Bash(pnpm install:*)",
+      "Bash(pnpm build:*)",
+      "Bash(pnpm run build)"
     ]
   }
 }

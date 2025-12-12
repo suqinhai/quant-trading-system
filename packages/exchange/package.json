@@ -25,7 +25,8 @@
     "ws": "^8.16.0",
     "eventemitter3": "^5.0.1",
     "decimal.js": "^10.4.3",
-    "pino": "^8.18.0"
+    "pino": "^8.18.0",
+    "zod": "^3.22.0"
   },
   "devDependencies": {
     "@types/ws": "^8.5.10",
