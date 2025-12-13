@@ -2,8 +2,15 @@
 // 实盘交易应用入口
 // ============================================================================
 
-import 'dotenv/config';
+import dotenv from 'dotenv';
+import path from 'path';
+import { fileURLToPath } from 'url';
 import pino from 'pino';
+
+// 加载环境变量
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+dotenv.config({ path: path.resolve(__dirname, '../.env') });
 
 import { createExchange } from '@quant/exchange';
 import { DualMAStrategy, RSIStrategy } from '@quant/strategy';
@@ -109,11 +116,12 @@ async function main(): Promise<void> {
 
   // 创建交易所实例
   const exchange = createExchange(config.exchange.type, {
+    exchangeId: config.exchange.type,
     apiKey: config.exchange.apiKey,
-    secret: config.exchange.apiSecret,
-    testnet: config.exchange.testnet,
+    apiSecret: config.exchange.apiSecret,
+    sandbox: config.exchange.testnet,
     timeout: config.exchange.timeout,
-    enableRateLimit: config.exchange.enableRateLimit,
+    rateLimit: config.exchange.enableRateLimit ? 10 : undefined,
   });
 
   // 创建策略实例
@@ -189,6 +197,7 @@ async function main(): Promise<void> {
 
 // 运行主程序
 main().catch(error => {
-  console.error('Fatal error:', error);
+  const errorMsg = error instanceof Error ? error.message : String(error);
+  console.error('Fatal error:', errorMsg);
   process.exit(1);
 });

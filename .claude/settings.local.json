@@ -16,7 +16,15 @@
       "Bash(pnpm run build)",
       "Bash(timeout 10 npm run dev:live:*)",
       "Bash(find:*)",
-      "Bash(timeout 15 npm run dev:live:*)"
+      "Bash(timeout 15 npm run dev:live:*)",
+      "Bash(timeout 20 npm run dev:live:*)",
+      "Bash(cat:*)",
+      "Bash(dir \"C:\\Users\\46745\\Desktop\\quant-trading-system\\apps\\live\")",
+      "Bash(findstr:*)",
+      "Bash(test:*)",
+      "Bash(pnpm --version:*)",
+      "Bash(node:*)",
+      "Bash(npx tsc:*)"
     ]
   }
 }

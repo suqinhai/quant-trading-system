@@ -4,7 +4,7 @@
 // ============================================================================
 
 import Decimal from 'decimal.js';
-import EventEmitter from 'eventemitter3';
+import { EventEmitter } from 'eventemitter3';
 import pino from 'pino';
 
 import type { BaseExchange, OrderRequest, Position } from '@quant/exchange';
